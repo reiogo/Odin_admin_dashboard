@@ -25,6 +25,7 @@ p {
   display: grid;
   grid-template: 1fr 1fr/ 3fr 2fr;
   align-items: center;
+  column-gap: 40px;
 }
 
 
@@ -40,11 +41,13 @@ p {
   height: 1.5rem;
   padding-top: 6px;
 }
+
 input[type="search"] {
   border-radius: 10px;
   border: none;
   background-color: lightgray;
   height: 1.4rem;
+  width: min(500px, 35vw)
 }
 
 .alert-icon img {
@@ -60,7 +63,7 @@ input[type="search"] {
 .user {
   font-weight: bold;
   justify-self: start;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .bottom-user-info {
@@ -88,10 +91,11 @@ input[type="search"] {
 
 .top-user-info {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 40px 70px 100px;
   justify-items: center;
   align-items: center;
-  padding-left: 80px;
+  padding-right: 50px;
+  justify-self: end;
 }
 
 .bottom-buttons button {
@@ -106,7 +110,8 @@ input[type="search"] {
 .bottom-buttons {
   display: grid;
   grid-template-columns: repeat(3, 6rem);
-  justify-items: center;
+  justify-self: end;
+  padding-right: 50px;
 }
  
 body .sidebar {
@@ -253,27 +258,41 @@ body .main {
 
 .trending-blocks {
   font-size: 1rem;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px lightgray;
-}
-
-.trending-block {
-  display: grid;
-  grid-template-rows: 1fr 3fr;
-
-}
-
-.trending-blocks {
+  line-height: 1rem;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
+  background-color: white;
+  box-shadow: 2px 2px 5px lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 0.8rem;
+  margin: 10px;
+  gap: 10px;
 }
+
 .trending-block {
   display: grid;
   grid-template: 1fr 1fr/ 1fr 4fr;
-  align-items: center;
+  align-self: center;
+  column-gap: 12px;
 }
+.trending-username {
+  align-self: end;
+}
+.trending-subtext{
+  color: gray;
+  align-self: start;
+}
+
 .trending-logo {
   grid-row: 1/3;
   justify-self: center;
+}
+
+.trending-logo img {
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #fee2e2;
+  padding: 3px;
+
 }
