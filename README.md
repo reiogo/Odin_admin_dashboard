@@ -1,4 +1,4 @@
-# Odin_admin_dashboard
-The Odin Project - CSS Grid exercise
+# Admin Dashboard Template
+Exercise using CSS Grid
 
-source: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
+Live Demo: https://reiogo.github.io/odin_admin_dashboard/
